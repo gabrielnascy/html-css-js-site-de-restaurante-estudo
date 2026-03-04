@@ -1,4 +1,4 @@
-#menu{ 
+#menu {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -6,83 +6,75 @@
     min-height: 100vh;
 }
 
-#dishes{ 
+#dishes {
     width: 100%;
     display: flex;
     justify-content: center;
     gap: 24px;
     margin-top: 32px;
-    
 }
 
-.dish{ 
+.dish {
     display: flex;
     flex-direction: column;
     align-items: center;
     border-radius: 20px;
     gap: 18px;
-    width: 30%;
+    width: 25%;
     padding: 20px;
-    background-color: #fff;
-    box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.1);  
+    background-color: var(--color-neutral-0);
+    box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.1);
     position: relative;
     overflow: hidden;
-   
 }
 
-.dish_heart{ 
+.dish-heart {
     position: absolute;
-    background-color: #e9a209;
+    background-color: var(--color-primary-6);
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.563rem; 
-    color: #fff9ea;
+    font-size: 1.563rem;
+    color: var(--color-primary-1);
     width: 70px;
     height: 70px;
-    top: -10px;
     right: -10px;
+    top: -10px;
     border-radius: 0px 37.5px 0px 42.5px;
 }
 
-
-.dish_description{ 
+.dish-description {
     color: #434343;
     text-align: center;
-
 }
 
-.dish_rate i{ 
-    color: #e9a209;
-
+.dish-rate i {
+    color: var(--color-primary-6);
 }
 
-.dish_price{ 
+.dish-price {
     display: flex;
     align-items: center;
     gap: 20px;
 }
 
-
-@media screen and (max-width: 1170px){ 
-    #dishes{ 
+@media screen and (max-width: 1170px) {
+    #dishes {
         flex-wrap: wrap;
         justify-content: center;
     }
 
-    .dish{ 
+    .dish {
         width: calc(50% - 12px);
-        
     }
 }
 
-@media screen and (max-width: 600px){ 
-    .dish{ 
+@media screen and (max-width: 600px) {
+    .dish {
         width: 100%;
     }
 
-    #menu .section_subtitle{ 
+    #menu .section-subtitle {
         text-align: center;
     }
-
-}
+} 
